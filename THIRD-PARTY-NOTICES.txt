@@ -1,0 +1,28 @@
+Kernalytix
+Copyright (c) 2026. Personal test build, provided as-is with no warranty.
+You use it at your own risk: it can end processes, stop services and change startup settings.
+
+Kernalytix includes the following open-source components. Their source code is
+available at the links below; each remains under its own license.
+
+LibreHardwareMonitorLib 0.9.6 — Mozilla Public License 2.0
+  https://github.com/LibreHardwareMonitor/LibreHardwareMonitor
+DiskInfoToolkit 1.1.2 — Mozilla Public License 2.0
+  https://github.com/Blacktempel/DiskInfoToolkit
+RAMSPDToolkit-NDD 1.4.2 — Mozilla Public License 2.0
+  https://github.com/Blacktempel/RAMSPDToolkit
+HidSharp 2.6.4 — Apache License 2.0
+  https://www.zer7.com/software/hidsharp
+Mono.Posix.NETStandard 1.0.0 — MIT License
+  https://github.com/mono/mono
+.NET runtime and libraries (System.Management, System.IO.Ports, etc.) — MIT License
+  https://github.com/dotnet/runtime
+
+Mozilla Public License 2.0: https://www.mozilla.org/MPL/2.0/
+Apache License 2.0:         https://www.apache.org/licenses/LICENSE-2.0
+MIT License:                https://opensource.org/license/mit
+
+Optional component installed separately (not bundled):
+PawnIO driver by namazso — freeware, https://pawnio.eu
+  Installed through winget only if you tick the PawnIO option during setup,
+  or click "Install PawnIO driver" inside Kernalytix.
