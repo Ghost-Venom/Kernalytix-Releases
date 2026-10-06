@@ -4,6 +4,8 @@ A Windows task manager with every feature included. It shows which process and w
 
 **[⬇ Download the latest installer](https://github.com/Ghost-Venom/Kernalytix-Releases/releases/latest)**
 
+![Kernalytix Summary tab](screenshot.png)
+
 > This is a test build. This repository only hosts downloads; the source code is private.
 
 ## Requirements
