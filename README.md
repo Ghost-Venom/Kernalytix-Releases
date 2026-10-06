@@ -1,18 +1,26 @@
 # Kernalytix
 
-A Windows task manager with every feature included. It shows which process and which part of your PC is slowing things down, right now.
+A task manager for **Windows and Mac** with every feature included. It shows which process and which part of your computer is slowing things down, right now.
 
-**[⬇ Download the latest installer](https://github.com/Ghost-Venom/Kernalytix-Releases/releases/latest)**
+**[⬇ Download the latest version](https://github.com/Ghost-Venom/Kernalytix-Releases/releases/latest)** (`Kernalytix-Setup-…exe` for Windows, `Kernalytix-…-macOS.zip` for Mac)
 
 ![Kernalytix Summary tab](screenshot.png)
 
 > This is a test build. This repository only hosts downloads; the source code is private.
 
 ## Requirements
-- 64-bit Windows 10 (version 2004 or newer) or Windows 11
-- Nothing else. The installer includes .NET.
+- **Windows:** 64-bit Windows 10 (version 2004 or newer) or Windows 11. Nothing else; the installer includes .NET.
+- **Mac:** Apple Silicon (M1 or newer) with macOS 13 Ventura or newer.
 
-## Installing
+## Installing on a Mac
+1. Download `Kernalytix-<version>-macOS.zip` from [Releases](https://github.com/Ghost-Venom/Kernalytix-Releases/releases/latest) and open it.
+2. Drag **Kernalytix** into your **Applications** folder, then open it from there.
+3. The app isn't notarized by Apple yet, so the first time macOS says it can't verify the developer. Click **Done**, open **System Settings › Privacy & Security**, scroll down, and click **Open Anyway** next to the Kernalytix message. You only do this once.
+4. Optional: click **Full access** (top right) and enter your password. Without it, macOS hides usage for system processes and other users' processes. Full access installs a small background helper that only reads statistics, the way Activity Monitor does. You can turn it off from the same button.
+
+Temperatures, fan speeds and power readings come from macOS's own sensors, so no extra drivers are needed.
+
+## Installing on Windows
 1. Download `Kernalytix-Setup-<version>.exe` from [Releases](https://github.com/Ghost-Venom/Kernalytix-Releases/releases/latest).
 2. Run it. The installer isn't code-signed yet, so Windows SmartScreen may say *"Windows protected your PC"*. Click **More info**, then **Run anyway**.
 3. Choose your options:
@@ -45,7 +53,9 @@ Open an [issue](https://github.com/Ghost-Venom/Kernalytix-Releases/issues) with:
 Crashes, freezes, readings that don't match Task Manager or HWiNFO, and missing features are all useful.
 
 ## Uninstalling
-Go to **Settings → Apps → Installed apps → Kernalytix → Uninstall**. This also removes the scheduled task and Kernalytix's settings. PawnIO, if installed, stays until you remove it separately.
+**Windows:** go to **Settings → Apps → Installed apps → Kernalytix → Uninstall**. This also removes the scheduled task and Kernalytix's settings. PawnIO, if installed, stays until you remove it separately.
+
+**Mac:** if you turned on Full access, turn it off first (**Full access ✓ → Turn off full access**). Then drag Kernalytix from Applications to the Trash.
 
 ## Third-party software
 Kernalytix uses [LibreHardwareMonitor](https://github.com/LibreHardwareMonitor/LibreHardwareMonitor) (MPL-2.0) and other open-source libraries; see [THIRD-PARTY-NOTICES.txt](THIRD-PARTY-NOTICES.txt).
